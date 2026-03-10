@@ -6,7 +6,7 @@
 
 ## Description
 
-Phonebook Microservice Web Application aims to create a web application with MySQL Database using Docker and Kubernetes to give students the understanding of Microservice architecture. In this application, we have a frontend service and a backend service to interact with database service. Each service will be managed by a Kubernetes deployment. The backend service will be a gateway for the application and it will serve the necessary web pages for create, delete and update operations while the frontend service will serve a search page in order to conduct read operations. To preserve the data in the database, persistent volume and persistent volume claim concepts should be adopted.
+Phonebook Microservice Web Application aims to create a web application with MySQL Database using Docker and Kubernetes to give participanpts the understanding of Microservice architecture. In this application, we have a frontend service and a backend service to interact with database service. Each service will be managed by a Kubernetes deployment. The backend service will be a gateway for the application and it will serve the necessary web pages for create, delete and update operations while the frontend service will serve a search page in order to conduct read operations. To preserve the data in the database, persistent volume and persistent volume claim concepts should be adopted.
 
 ## Problem Statement
 
@@ -22,15 +22,15 @@ Phonebook Microservice Web Application aims to create a web application with MyS
 
   - number: phone number belonging to the recorded person.
 
-- Your teammates also created the RESTful web service as given in [Phonebook API](./Phonebook-api.py) using Python Flask Framework. Below table shows how the HTTP methods are designed to affect the given resources identified by URIs.
+- Your teammates have also created a RESTful web service using Python Flask Framework. The table below shows how HTTP methods affect the resources identified by URIs:
 
-| HTTP Method  | Action | Example|
-| --- | --- | --- |
-| `GET`     |   Read the records | http://[ec2-hostname]:30001/  |
-| `POST`    |   Create a new record | http://[ec2-hostname]:30001/add  |
-| `POST`    |   Update an existing record | http://[ec2-hostname]:30001/update  |
-| `POST`    |   Delete an existing record | http://[ec2-hostname]:30001/delete  |
-| `POST`    |   search a record | http://[ec2-hostname]:30002  |
+| HTTP Method | Operation | Example |
+|-------------|-----------|---------|
+| `GET`  | Read records | `http://[ec2-hostname]:30001/` |
+| `POST` | Create new record | `http://[ec2-hostname]:30001/add` |
+| `POST` | Update existing record | `http://[ec2-hostname]:30001/update` |
+| `POST` | Delete existing record | `http://[ec2-hostname]:30001/delete` |
+| `POST` | Search record | `http://[ec2-hostname]:30002` |
 
 - As a cloud engineer, you're requested to deploy the app on an AWS EC2 Instance using Docker and Kubernetes to showcase your project. In order to achieve this goal, you need to;
 
@@ -107,15 +107,15 @@ Phonebook Microservice Web Application aims to create a web application with MyS
 
 Initial files:
 
-1. README.md                      # Given to the students (Definition of the project)
-2. Image_for_web_server           # Given to the students (Image components of Python Flask Web API for Update/delete/add record)
+1. README.md                      # Given to the participanpts (Definition of the project)
+2. Image_for_web_server           # Given to the participanpts (Image components of Python Flask Web API for Update/delete/add record)
   - app.py      
   - requirements.txt              
   - templates
     - index.html
     - add-update.html
     - delete.html
-3. image_for_result_server        # Given to the students (Image components of Python Flask Web API for search record)
+3. image_for_result_server        # Given to the participanpts (Image components of Python Flask Web API for search record)
   - app.py           
   - requirements.txt              
   - templates
@@ -124,25 +124,25 @@ Initial files:
 Requested files:
 
 ADD/DELETE/UPDATE DEPLOYMENT AND SERVICE
-1. Dockerfile                     # To be delivered by students 
-2. web_server_deployment.yml      # To be delivered by students
-3. web_server_service.yaml        # To be delivered by students
+1. Dockerfile                     # To be delivered by participanpts 
+2. web_server_deployment.yml      # To be delivered by participanpts
+3. web_server_service.yaml        # To be delivered by participanpts
 
 SEARCH DEPLOYMENT AND SERVICE
-1. Dockerfile                     # To be delivered by students
-2. result_server_deployment.yml   # To be delivered by students
-3. result_server_service.yaml     # To be delivered by students
+1. Dockerfile                     # To be delivered by participanpts
+2. result_server_deployment.yml   # To be delivered by participanpts
+3. result_server_service.yaml     # To be delivered by participanpts
 
 DATABASE DEPLOYMENT AND SERVICE
-1. mysql_deployement.yml          # To be delivered by students
-2. mysql_service.yaml             # To be delivered by students
-3. persistent_volume.yaml         # To be delivered by students
-4. persistent_volume_claim.yaml   # To be delivered by students
+1. mysql_deployement.yml          # To be delivered by participanpts
+2. mysql_service.yaml             # To be delivered by participanpts
+3. persistent_volume.yaml         # To be delivered by participanpts
+4. persistent_volume_claim.yaml   # To be delivered by participanpts
 
 SECRETS AND CONFIGMAP
-1. mysql-secret.yaml              # To be delivered by students
-2. database_configmap.yaml        # To be delivered by students
-3. servers_configmap.yaml         # To be delivered by students
+1. mysql-secret.yaml              # To be delivered by participanpts
+2. database_configmap.yaml        # To be delivered by participanpts
+3. servers_configmap.yaml         # To be delivered by participanpts
 
 ```
 
@@ -164,7 +164,7 @@ SECRETS AND CONFIGMAP
 
 - AWS Cloudformation Service
 
-### At the end of the project, students will be able to;
+### At the end of the project, participanpts will be able to;
 
 - configure a connection to the `MySQL` database.
 
